@@ -21,8 +21,8 @@
 		BC060D5819246F3B009989D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC060D3A19246F3B009989D0 /* UIKit.framework */; };
 		BC060D6019246F3B009989D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC060D5E19246F3B009989D0 /* InfoPlist.strings */; };
 		BC060D6219246F3B009989D0 /* LKImageUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC060D6119246F3B009989D0 /* LKImageUtilityTests.m */; };
-		BC060D6E19246FE2009989D0 /* LKImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BC060D6D19246FE2009989D0 /* LKImageUtility.m */; };
-		BC060D6F19246FE2009989D0 /* LKImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BC060D6D19246FE2009989D0 /* LKImageUtility.m */; };
+		BC060D73192475BC009989D0 /* LKImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BC060D72192475BC009989D0 /* LKImageUtility.m */; };
+		BC060D74192475BC009989D0 /* LKImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BC060D72192475BC009989D0 /* LKImageUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +55,9 @@
 		BC060D5D19246F3B009989D0 /* LKImageUtilityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKImageUtilityTests-Info.plist"; sourceTree = "<group>"; };
 		BC060D5F19246F3B009989D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC060D6119246F3B009989D0 /* LKImageUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKImageUtilityTests.m; sourceTree = "<group>"; };
-		BC060D6C19246FE2009989D0 /* LKImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKImageUtility.h; sourceTree = "<group>"; };
-		BC060D6D19246FE2009989D0 /* LKImageUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKImageUtility.m; sourceTree = "<group>"; };
 		BC060D7019246FF9009989D0 /* LKImageUtility.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = LKImageUtility.podspec; sourceTree = "<group>"; };
+		BC060D71192475BC009989D0 /* LKImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKImageUtility.h; sourceTree = "<group>"; };
+		BC060D72192475BC009989D0 /* LKImageUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKImageUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,10 +162,10 @@
 		BC060D6B19246FBB009989D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BC060D6C19246FE2009989D0 /* LKImageUtility.h */,
-				BC060D6D19246FE2009989D0 /* LKImageUtility.m */,
+				BC060D71192475BC009989D0 /* LKImageUtility.h */,
+				BC060D72192475BC009989D0 /* LKImageUtility.m */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC060D4D19246F3B009989D0 /* ViewController.m in Sources */,
-				BC060D6E19246FE2009989D0 /* LKImageUtility.m in Sources */,
+				BC060D73192475BC009989D0 /* LKImageUtility.m in Sources */,
 				BC060D4719246F3B009989D0 /* AppDelegate.m in Sources */,
 				BC060D4319246F3B009989D0 /* main.m in Sources */,
 			);
@@ -277,7 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC060D6219246F3B009989D0 /* LKImageUtilityTests.m in Sources */,
-				BC060D6F19246FE2009989D0 /* LKImageUtility.m in Sources */,
+				BC060D74192475BC009989D0 /* LKImageUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +474,7 @@
 				BC060D6719246F3B009989D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC060D6819246F3B009989D0 /* Build configuration list for PBXNativeTarget "LKImageUtilityTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +483,7 @@
 				BC060D6A19246F3B009989D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
