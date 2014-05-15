@@ -21,6 +21,8 @@
 		BC060D5819246F3B009989D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC060D3A19246F3B009989D0 /* UIKit.framework */; };
 		BC060D6019246F3B009989D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC060D5E19246F3B009989D0 /* InfoPlist.strings */; };
 		BC060D6219246F3B009989D0 /* LKImageUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC060D6119246F3B009989D0 /* LKImageUtilityTests.m */; };
+		BC060D6E19246FE2009989D0 /* LKImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BC060D6D19246FE2009989D0 /* LKImageUtility.m */; };
+		BC060D6F19246FE2009989D0 /* LKImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BC060D6D19246FE2009989D0 /* LKImageUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		BC060D5D19246F3B009989D0 /* LKImageUtilityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKImageUtilityTests-Info.plist"; sourceTree = "<group>"; };
 		BC060D5F19246F3B009989D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC060D6119246F3B009989D0 /* LKImageUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKImageUtilityTests.m; sourceTree = "<group>"; };
+		BC060D6C19246FE2009989D0 /* LKImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKImageUtility.h; sourceTree = "<group>"; };
+		BC060D6D19246FE2009989D0 /* LKImageUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKImageUtility.m; sourceTree = "<group>"; };
+		BC060D7019246FF9009989D0 /* LKImageUtility.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = LKImageUtility.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +87,10 @@
 		BC060D2A19246F3B009989D0 = {
 			isa = PBXGroup;
 			children = (
-				BC060D3C19246F3B009989D0 /* LKImageUtility */,
-				BC060D5B19246F3B009989D0 /* LKImageUtilityTests */,
+				BC060D7019246FF9009989D0 /* LKImageUtility.podspec */,
+				BC060D6B19246FBB009989D0 /* Classes */,
+				BC060D3C19246F3B009989D0 /* Examples */,
+				BC060D5B19246F3B009989D0 /* Tests */,
 				BC060D3519246F3B009989D0 /* Frameworks */,
 				BC060D3419246F3B009989D0 /* Products */,
 			);
@@ -109,7 +116,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC060D3C19246F3B009989D0 /* LKImageUtility */ = {
+		BC060D3C19246F3B009989D0 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
 				BC060D4519246F3B009989D0 /* AppDelegate.h */,
@@ -120,7 +127,7 @@
 				BC060D4E19246F3B009989D0 /* Images.xcassets */,
 				BC060D3D19246F3B009989D0 /* Supporting Files */,
 			);
-			path = LKImageUtility;
+			path = Examples;
 			sourceTree = "<group>";
 		};
 		BC060D3D19246F3B009989D0 /* Supporting Files */ = {
@@ -134,13 +141,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BC060D5B19246F3B009989D0 /* LKImageUtilityTests */ = {
+		BC060D5B19246F3B009989D0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				BC060D6119246F3B009989D0 /* LKImageUtilityTests.m */,
 				BC060D5C19246F3B009989D0 /* Supporting Files */,
 			);
-			path = LKImageUtilityTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		BC060D5C19246F3B009989D0 /* Supporting Files */ = {
@@ -150,6 +157,15 @@
 				BC060D5E19246F3B009989D0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC060D6B19246FBB009989D0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC060D6C19246FE2009989D0 /* LKImageUtility.h */,
+				BC060D6D19246FE2009989D0 /* LKImageUtility.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC060D4D19246F3B009989D0 /* ViewController.m in Sources */,
+				BC060D6E19246FE2009989D0 /* LKImageUtility.m in Sources */,
 				BC060D4719246F3B009989D0 /* AppDelegate.m in Sources */,
 				BC060D4319246F3B009989D0 /* main.m in Sources */,
 			);
@@ -260,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC060D6219246F3B009989D0 /* LKImageUtilityTests.m in Sources */,
+				BC060D6F19246FE2009989D0 /* LKImageUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,8 +395,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKImageUtility/LKImageUtility-Prefix.pch";
-				INFOPLIST_FILE = "LKImageUtility/LKImageUtility-Info.plist";
+				GCC_PREFIX_HEADER = "Examples/LKImageUtility-Prefix.pch";
+				INFOPLIST_FILE = "Examples/LKImageUtility-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,8 +408,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKImageUtility/LKImageUtility-Prefix.pch";
-				INFOPLIST_FILE = "LKImageUtility/LKImageUtility-Info.plist";
+				GCC_PREFIX_HEADER = "Examples/LKImageUtility-Prefix.pch";
+				INFOPLIST_FILE = "Examples/LKImageUtility-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -412,7 +430,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "LKImageUtilityTests/LKImageUtilityTests-Info.plist";
+				INFOPLIST_FILE = "Tests/LKImageUtilityTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -430,7 +448,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LKImageUtility/LKImageUtility-Prefix.pch";
-				INFOPLIST_FILE = "LKImageUtilityTests/LKImageUtilityTests-Info.plist";
+				INFOPLIST_FILE = "Tests/LKImageUtilityTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
