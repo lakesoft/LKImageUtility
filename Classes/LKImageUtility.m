@@ -25,15 +25,17 @@
 
     CGRect bounds = CGRectMake(0, 0, width, height);
 
-    if (bounds.size.width > toWidth || bounds.size.height > toWidth) {
-        CGFloat ratio = width / height;
-        
-        if (ratio > 1.0) {
-            bounds.size.width = toWidth;
-            bounds.size.height = toWidth / ratio;
-        } else {
-            bounds.size.width = toWidth * ratio;
-            bounds.size.height = toWidth;
+    if (toWidth) {
+        if (bounds.size.width > toWidth || bounds.size.height > toWidth) {
+            CGFloat ratio = width / height;
+            
+            if (ratio > 1.0) {
+                bounds.size.width = toWidth;
+                bounds.size.height = toWidth / ratio;
+            } else {
+                bounds.size.width = toWidth * ratio;
+                bounds.size.height = toWidth;
+            }
         }
     }
     
