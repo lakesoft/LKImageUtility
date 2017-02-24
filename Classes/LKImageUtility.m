@@ -5,6 +5,7 @@
 //  Created by Hashiguchi Hiroshi on 11/10/04.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
 //
+#import <UIKit/UIKit.h>
 #import <ImageIO/ImageIO.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "LKImageUtility.h"
@@ -14,10 +15,15 @@
 
 + (UIImage*)adjustOrientationImage:(UIImage*)image
 {
-    return [self adjustOrientationImage:image toWidth:0];
+    return [self adjustOrientationImage:image toWidth:0 reverseRatio:NO];
 }
 
 + (UIImage*)adjustOrientationImage:(UIImage*)image toWidth:(CGFloat)toWidth
+{
+    return [self adjustOrientationImage:image toWidth:toWidth reverseRatio:NO];
+}
+
++ (UIImage*)adjustOrientationImage:(UIImage*)image toWidth:(CGFloat)toWidth reverseRatio:(BOOL)reverseRatio
 {
     CGImageRef imageRef = image.CGImage;
     CGFloat width = CGImageGetWidth(imageRef);
@@ -28,8 +34,12 @@
     if (toWidth) {
         if (bounds.size.width > toWidth || bounds.size.height > toWidth) {
             CGFloat ratio = width / height;
+            BOOL pw = ratio > 1.0;
+            if (reverseRatio) {
+                pw = !pw;
+            }
             
-            if (ratio > 1.0) {
+            if (pw) {
                 bounds.size.width = toWidth;
                 bounds.size.height = toWidth / ratio;
             } else {

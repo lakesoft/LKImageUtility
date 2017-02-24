@@ -11,8 +11,8 @@
 @class CLLocation;
 @interface LKImageUtility : NSObject
 
-+ (UIImage*)adjustOrientationImage:(UIImage*)image;
-+ (UIImage*)adjustOrientationImage:(UIImage*)image toWidth:(CGFloat)width;
++ (UIImage*)adjustOrientationImage:(UIImage*)image toWidth:(CGFloat)toWidth;
++ (UIImage*)adjustOrientationImage:(UIImage*)image toWidth:(CGFloat)toWidth reverseRatio:(BOOL)reverseRatio;
 
 + (UIImage*)imageByCropping:(UIImage *)imageToCrop toRect:(CGRect)rect;
 
