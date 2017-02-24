@@ -10,7 +10,7 @@ Image Utilities.
   s.author       = { "Hiroshi Hashiguchi" => "xcatsan@mac.com" }
   s.source       = { :git => "https://github.com/lakesoft/LKImageUtility.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '10.2'
+  s.platform     = :ios, '9.3'
   s.requires_arc = true
 
   s.source_files = 'Classes/*'
