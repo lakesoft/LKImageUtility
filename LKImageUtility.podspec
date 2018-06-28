@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LKImageUtility"
-  s.version      = "1.1.1"
+  s.version      = "1.2.0"
   s.summary      = "Image Utilities"
   s.description  = <<-DESC
 Image Utilities.
