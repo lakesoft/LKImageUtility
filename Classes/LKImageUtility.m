@@ -110,7 +110,7 @@
             break;
     }
     
-    UIGraphicsBeginImageContextWithOptions(bounds.size, false, 0.0)
+    UIGraphicsBeginImageContextWithOptions(bounds.size, false, 0.0);
     CGContextRef context = UIGraphicsGetCurrentContext();
 
     if (image.imageOrientation == UIImageOrientationRight ||
